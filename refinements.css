@@ -1,0 +1,57 @@
+:root {
+  --serif: 'Playfair Display', Georgia, serif;
+  --script: 'Great Vibes', cursive;
+  --sans: 'Poppins', sans-serif;
+}
+
+.cover h1,
+.hero h2,
+footer h2 {
+  font-family: var(--script);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: .01em;
+}
+
+.cover h1 i,
+.hero h2 span,
+footer h2 i {
+  font-family: var(--serif);
+  font-size: .62em;
+  font-style: italic;
+}
+
+h3,
+.couple-grid h4,
+.event-card h4,
+.quote blockquote,
+.date-mark strong,
+.timer strong,
+.bank-card > strong {
+  font-family: var(--serif);
+}
+
+.guest strong {
+  display: block;
+  max-width: 420px;
+  margin: 8px auto 5px;
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+  color: #f2d494;
+}
+
+.guest small {
+  display: block;
+  max-width: 360px;
+  margin: 4px auto 0;
+  color: rgba(255,255,255,.76);
+  font-size: .72rem;
+  line-height: 1.5;
+}
+
+footer small {
+  display: block;
+  margin-top: 30px;
+  color: #777;
+  font-size: .68rem;
+}
