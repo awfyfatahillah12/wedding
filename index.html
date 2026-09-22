@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10100f" />
+  <meta name="description" content="Undangan pernikahan Awfy & Nana — 20 Desember 2026." />
+  <title>Awfy & Nana — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2310100f'/%3E%3Cpath d='M14 44 27 17h10l13 27h-8l-3-7H25l-3 7Zm14-14h8l-4-10Z' fill='%23d3b06c'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="refinements.css" />
+</head>
+<body class="locked">
+  <div class="grain"></div>
+  <div class="cover" id="cover" aria-label="Pembuka undangan">
+    <img src="assets/gallery-01.png" alt="Foto prewedding Awfy dan Nana" />
+    <div class="cover-shade"></div>
+    <div class="cover-content">
+      <p class="eyebrow">THE WEDDING OF</p>
+      <h1>Awfy <i>&</i> Nana</h1>
+      <p class="guest">Kepada Yth.<br><strong id="guestName">Tamu Undangan</strong><small>Mohon maaf apabila ada kesalahan penulisan nama atau gelar.</small></p>
+      <button class="primary" id="openInvitation">Buka Undangan</button>
+    </div>
+  </div>
+
+  <button class="music" id="musicToggle" aria-label="Putar atau hentikan musik" title="Musik">♫</button>
+  <audio id="weddingMusic" loop preload="auto"><source src="https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%80%90%E7%84%A1%E6%96%99%E3%83%95%E3%83%AA%E3%83%BCBGM%E3%80%91%E6%8A%92%E6%83%85%E7%9A%84%E3%81%AA%E3%83%94%E3%82%A2%E3%82%BD%E3%83%AD%E3%80%8CMemories3%E3%80%8D.opus" type="audio/ogg"></audio>
+
+  <main id="main">
+    <section class="hero">
+      <img src="assets/gallery-01.png" alt="Awfy dan Nana mengenakan busana pernikahan elegan" />
+      <div class="hero-overlay"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">SAVE THE DATE · 20.12.2026</p>
+        <h2>Awfy <span>&</span> Nana</h2>
+        <p>We found love in each other, and home in the same heart.</p>
+        <a href="#acara" class="text-link">Lihat detail acara ↓</a>
+      </div>
+    </section>
+
+    <section class="intro section-pad">
+      <div class="ornament">AN</div>
+      <p class="kicker">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+      <h3>Dengan memohon rahmat dan ridho Allah SWT</h3>
+      <p>Dengan penuh kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada pernikahan kami.</p>
+      <div class="couple-grid">
+        <article>
+          <span>THE GROOM</span><h4>Awfy</h4><p>Putra pertama dari<br><b>Bapak Ahmad & Ibu Rina</b></p>
+        </article>
+        <div class="amp">&</div>
+        <article>
+          <span>THE BRIDE</span><h4>Nana</h4><p>Putri pertama dari<br><b>Bapak Rahman & Ibu Sari</b></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote">
+      <img src="assets/gallery-02.png" alt="Potret Awfy dan Nana" loading="lazy" />
+      <blockquote>“Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu, agar kamu cenderung dan merasa tenteram kepadanya.”</blockquote>
+      <p>QS. Ar-Rum · 21</p>
+    </section>
+
+    <section class="event section-pad" id="acara">
+      <p class="kicker">A JOYFUL CELEBRATION</p>
+      <h3>Hari Bahagia Kami</h3>
+      <div class="date-mark"><span>MIN</span><strong>20</strong><span>DES<br>2026</span></div>
+      <div class="events">
+        <article class="event-card"><span>01</span><h4>Akad Nikah</h4><p>08.00 — 10.00 WIB</p><hr><p><b>The Glass House Jakarta</b><br>Jl. Gatot Subroto, Jakarta Selatan</p></article>
+        <article class="event-card"><span>02</span><h4>Resepsi</h4><p>11.00 — 14.00 WIB</p><hr><p><b>The Glass House Jakarta</b><br>Jl. Gatot Subroto, Jakarta Selatan</p></article>
+      </div>
+      <a class="primary dark" href="https://www.google.com/maps/search/?api=1&query=Gatot+Subroto+Jakarta" target="_blank" rel="noreferrer">Buka Google Maps</a>
+    </section>
+
+    <section class="countdown">
+      <p class="kicker">COUNTING THE DAYS</p><h3>Menuju Hari Istimewa</h3>
+      <div class="timer"><div><strong id="days">00</strong><span>Hari</span></div><div><strong id="hours">00</strong><span>Jam</span></div><div><strong id="minutes">00</strong><span>Menit</span></div><div><strong id="seconds">00</strong><span>Detik</span></div></div>
+      <button class="outline" id="calendarBtn">Simpan ke Kalender</button>
+    </section>
+
+    <section class="gallery section-pad">
+      <p class="kicker">TEN FRAMES, ONE STORY</p><h3>Our Prewedding</h3>
+      <p class="section-copy">Sepuluh potret, satu perjalanan, dan sebuah janji untuk pulang pada hati yang sama.</p>
+      <div class="gallery-grid" id="gallery">
+        <button class="tall"><img src="assets/gallery-01.png" alt="Prewedding Awfy dan Nana 1" loading="lazy"></button>
+        <button><img src="assets/gallery-02.png" alt="Prewedding Awfy dan Nana 2" loading="lazy"></button>
+        <button><img src="assets/gallery-03.png" alt="Prewedding Awfy dan Nana 3" loading="lazy"></button>
+        <button class="wide"><img src="assets/gallery-04.png" alt="Prewedding Awfy dan Nana 4" loading="lazy"></button>
+        <button><img src="assets/gallery-05.png" alt="Prewedding Awfy dan Nana 5" loading="lazy"></button>
+        <button><img src="assets/gallery-06.png" alt="Prewedding Awfy dan Nana 6" loading="lazy"></button>
+        <button><img src="assets/gallery-07.png" alt="Prewedding Awfy dan Nana 7" loading="lazy"></button>
+        <button class="tall"><img src="assets/gallery-08.png" alt="Prewedding Awfy dan Nana 8" loading="lazy"></button>
+        <button><img src="assets/gallery-09.png" alt="Prewedding Awfy dan Nana 9" loading="lazy"></button>
+        <button><img src="assets/gallery-10.png" alt="Prewedding Awfy dan Nana 10" loading="lazy"></button>
+      </div>
+    </section>
+
+    <section class="gift section-pad">
+      <p class="kicker">WEDDING GIFT</p><h3>Tanda Kasih</h3>
+      <p class="section-copy">Kehadiran dan doa restu Anda adalah hadiah terindah. Namun bila ingin berbagi tanda kasih, dapat melalui:</p>
+      <div class="bank-card"><div class="bank-top"><span>BANK CENTRAL ASIA</span><b>DEMO</b></div><p>Nomor Rekening</p><strong id="accountNumber">1234 5678 901</strong><p>a.n. Awfy Pratama</p><button class="copy-btn" data-copy="12345678901">Salin Nomor</button></div>
+      <div class="bank-card light"><div class="bank-top"><span>BANK MANDIRI</span><b>DEMO</b></div><p>Nomor Rekening</p><strong>9876 5432 100</strong><p>a.n. Nana Aulia</p><button class="copy-btn" data-copy="98765432100">Salin Nomor</button></div>
+      <details><summary>Kirim hadiah fisik</summary><p>Jl. Mawar Indah No. 20, Jakarta Selatan 12345<br><b>Penerima: Awfy & Nana · 0812-0000-2026</b></p></details>
+      <small>Data rekening dan alamat di atas merupakan data contoh untuk versi percobaan.</small>
+    </section>
+
+    <section class="rsvp section-pad" id="rsvp">
+      <p class="kicker">RSVP & WISHES</p><h3>Konfirmasi Kehadiran</h3>
+      <form id="rsvpForm">
+        <label>Nama lengkap<input name="name" required placeholder="Nama Anda"></label>
+        <label>Konfirmasi kehadiran<select name="attendance" required><option value="">Pilih jawaban</option><option>Hadir, insyaAllah</option><option>Maaf, belum dapat hadir</option></select></label>
+        <label>Jumlah tamu<select name="guests" required><option>1 orang</option><option>2 orang</option></select></label>
+        <label>Ucapan & doa<textarea name="message" rows="4" required placeholder="Tuliskan doa terbaik untuk kedua mempelai"></textarea></label>
+        <button class="primary dark" type="submit">Kirim Konfirmasi</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+      <div class="wishes" id="wishes"><article><div>R</div><p><b>Rahma</b><span>Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Bahagia selalu!</span></p></article><article><div>D</div><p><b>Dimas</b><span>Selamat menempuh hidup baru. Semoga cinta kalian selalu bertumbuh.</span></p></article></div>
+    </section>
+
+    <footer><p class="eyebrow">THANK YOU</p><h2>Awfy <i>&</i> Nana</h2><p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir.</p><span>20 · 12 · 2026</span><small>Music “Memories3” by PeriTune · CC BY 3.0</small></footer>
+  </main>
+
+  <dialog id="lightbox"><button id="closeLightbox" aria-label="Tutup">×</button><img id="lightboxImage" alt="Tampilan foto diperbesar"></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
